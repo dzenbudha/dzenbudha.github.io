@@ -1,0 +1,136 @@
+.header .row{
+	padding-top: 2%;
+}
+.header .button{
+	border: none;
+	padding: 0 1rem;
+	margin-bottom: 0;
+	float: right;
+}
+.header h1{
+	font-weight: bolder;
+	margin-right: auto;
+	font-size: 3rem;
+	width: 20%;
+	line-height: 80%;
+	margin-bottom: 1rem;
+}
+.itemMenuClicked{
+	background-color: #fff;
+	border-radius: 1rem;
+	border-bottom-right-radius: 0;
+	border-bottom-left-radius: 0;
+}
+.header .twelve{
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	-ms-align-items: flex-end;
+	align-items: flex-end;
+}
+
+.main{
+	margin: 10% 0;
+}
+label, input{
+	width: 100%;
+}
+.footer .formClass p{
+	float: right;
+	font-weight: bold;
+}
+.footer .copyright p:first-child{
+	font-weight: bold;
+}
+.footer .copyright p:first-child:before{
+	content:"\00A9";
+}
+.footer .copyright p{
+	padding: 0;
+	margin: 0;
+}
+.footer .formClass fieldset{
+	display: flex;
+	flex-flow: row nowrap;
+	max-width: 100%;
+}
+.formClass label{
+	width: 100%;
+}
+.formClass input{
+	border-color: transparent;
+}
+.formClass input[type="email"]{
+	border-radius: 4px 0 0 4px;
+	flex: 1;
+}
+.formClass input[type="submit"]{
+	border-radius: 0 4px 4px 0;
+	padding: 0 10px;
+	background-color: #fff;
+    max-width: 30%; 
+}
+.formClass input[type="submit"]:hover{
+	background-color: initial;
+	background-color: #fff;
+}
+
+.header{
+	background: linear-gradient(to top right, #CCFFFF, #99FFFF);
+}
+.footer{
+	background: linear-gradient(to bottom left, #99FFCC, #66FFCC);
+}
+
+/*<section class="workStep_container">*/
+.workStep_container{
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+	width: 80%;
+	margin: 5rem auto;
+}
+.workStep_container .workStep{
+	flex: 1 1 30%;
+	background-color: rgba(0,0,0,.1);
+	margin: .7rem;
+	padding: 1rem;
+	padding-bottom: 0;
+	border-radius: .5rem;
+
+	display: flex;
+	flex-flow: column;
+}
+.workStep button{
+	margin-top: auto;
+}
+.workStep:hover{
+	background-color: rgba(0,0,0,.15);
+	transition: 1s;	
+}
+body button:hover, body input[type="submit"]:hover{
+	 background-color: rgb(230,230,230);
+	 transition: 1s;	
+}
+/*<section class="workStep_container">*/
+
+@media (max-width: 549px) {
+.header h1{
+	display: block;
+	text-align: center;
+	padding-top: 1rem;
+}
+.header .button{
+	display: none;
+}
+}
+
+@media (max-width: 320px) {
+	.header .button{
+		width: 48%;	
+		margin: 0;
+		padding: 0;
+	}
+}
